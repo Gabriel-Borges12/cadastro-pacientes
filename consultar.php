@@ -35,10 +35,11 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Lista</title>
 </head>
 <body>
-<button type="button" class="btn-voltar"><a href="index.php">Voltar</a></button>
+<button type="button" class="btn-volta"><a href="index.php">Voltar</a></button>
 </body>
 </html>
 
