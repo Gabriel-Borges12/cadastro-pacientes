@@ -1,12 +1,10 @@
-<?php
-    $hostname = 'localhost';
-    $user = 'root';
-    $senha = '';
-    $bd = 'banco3_crud';
+<?php 
+    // Conecta ao banco de dados
+    $conn = new mysqli ("localhost", "root", "", "banco3_crud");
 
-    $conn = new mysqli($hostname, $user, $senha, $bd);
-    if($conn->connect_error){
-        die("Erro ao conectar: ".$conn->connect_error);
+    // Verifica se a conexão foi bem-sucedida
+    if ($conn->connect_error){
+        die("Erro de conexão: " . $conn ->connect_error);
     }
-    session_start();
+
 ?>
