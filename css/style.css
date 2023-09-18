@@ -1,0 +1,90 @@
+body {
+    background-image: url("../medicbackground.jpg") ;
+    display: flex;
+    justify-content: center;
+}
+
+#formulario {
+    height: 220px;
+    width: 450px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    width: 250px;
+    background-color: white;
+    border-style: none;
+    border-radius: 250px;
+    height: 20px;
+    color: black;
+}
+
+#btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px    ;
+}
+label {
+    width: 250px;
+
+}
+select {
+    background-color: white;
+    border-style: none;
+    border-radius: 250px;
+    height: 25px;
+    color: black;
+    width: 250px;
+}
+.titulo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn {
+    background-color: blue !important;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+main {
+    border-radius: 15px;
+    max-width: 1024px;
+    background-color: rgb(127, 197, 255);
+}
+
+button {
+    background-color: rgb(43, 127, 197);
+    border-style: none;
+    border-radius: 250px;
+    height: 35px;
+    color: white;
+    margin-top: 20px;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#btn-cadastrar {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
