@@ -25,7 +25,7 @@
                     <option value="privado">Privado</option>
                 </select>
                 <input type="submit" class="btn" value="Enviar">
-                <button type="button" class="btn-list"><a href="consultar.php">Lista de Produtos</a></button>
+                <button type="button" class="btn-list"><a href="consultar.php">Lista de Pacientes</a></button>
             </form>
         </div>
     </main>

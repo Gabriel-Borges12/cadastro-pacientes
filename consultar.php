@@ -16,7 +16,7 @@ if ($resultado->num_rows > 0) {
         echo "<td>" . $row['convenio_paciente'] . "</td>";
         echo "<td>";
         echo "<a href='editar.php?id=" . $row['id_paciente'] . "'>Editar</a> | ";
-        echo "<a href='apagar.php?id=" . $row['id_paciente'] . "'>Apagar</a>";
+        echo "<a href='excluir.php?id=" . $row['id_paciente'] . "'>Apagar</a>";
         echo "</td>";
         echo "</tr>";
     }

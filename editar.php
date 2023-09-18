@@ -4,7 +4,7 @@
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
 
-        $sql = "SELECT * FROM pacientes WHERE id = ?";
+        $sql = "SELECT * FROM paciente WHERE id_paciente = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("i", $id);
         $stmt->execute();
@@ -23,7 +23,8 @@
         $nome = $_POST['nome'];
         $cpf = $_POST['cpf'];
 
-        $sql = "UPDATE pacientes SET nome = ?, cpf = ? WHERE id = ?";
+        $sql = "UPDATE paciente SET nome_paciente = ?, cpf_paciente = ? WHERE id_paciente = ?";
+        $stmt = $conn->prepare($sql);
         $stmt->bind_param("sii", $nome, $cpf, $id);
 
         if ($stmt->execute()) {
@@ -46,12 +47,12 @@
 <body>
     <h1>Editar Pacientes</h1>
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
-        <input type="hidden" name="id" value="<?php echo $paciente['id']; ?>">
+        <input type="hidden" name="id" value="<?php echo $paciente['id_paciente']; ?>">
 
         <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome" value="<?php echo $paciente['nome']; ?>" required>
+        <input type="text" name="nome" id="nome" value="<?php echo $paciente['nome_paciente']; ?>" required>
         <label for="cpf">CPF:</label>
-        <input type="number" name="cpf" id="cpf" value="<?php echo $paciente['cpf']; ?>" required>
+        <input type="number" name="cpf" id="cpf" value="<?php echo $paciente['cpf_paciente']; ?>" required>
 
         <button type="submit">Atualizar</button>
     </form>
